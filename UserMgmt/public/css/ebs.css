@@ -1,0 +1,459 @@
+﻿/*******************************************************************************
+ * 
+ * File:        ebs.css
+ * Description: CSS file for all EBS applications.
+ * Prefix:      EBS Classes will use the "ebs-" prefix.
+ *
+ *******************************************************************************/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+    html, body {
+        font: 85% "segoe ui",arial,sans-serif !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    html, body {
+        font: 100% "segoe ui",arial,sans-serif !important;
+    }
+}
+
+
+
+
+/*******************************************************************************
+ * 
+ * LAYOUT
+ *
+ *******************************************************************************/
+
+/* The div that contains the entire application */
+#layout {
+    min-width: 800px;
+    min-height: 600px;
+}
+
+
+
+/*******************************************************************************
+ * 
+ * HEADER / FOOTER
+ *
+ *******************************************************************************/
+
+/* The classification block displayed at the top of the page */
+#classificationHeader {
+    padding-bottom: 0px !important;
+    border-bottom-width: 0px !important;
+}
+
+/* The classification block displayed at the bottom of the page */
+#classificationFooter {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* The user name displayed in the header */
+#rightHeader {
+    float:right;
+    background-color: white; 
+    color: darkblue; 
+    font-size: 80%; 
+    min-width: 145px; 
+    font-weight: normal; 
+    text-align: right;
+    padding-right:5px;
+}
+
+@media (max-width: 1280px) {
+    #rightHeader {
+        height: 28px;
+    }
+}
+
+@media (min-width: 1281px) {
+    #rightHeader {
+        height: 33px; 
+    }
+}
+
+/* The last updated date displayed in the header */
+#headerLastUpdated {
+    float: right;
+}
+
+
+/* The classification displayed in the header and footer */
+.ebs-classification {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 75%;
+}
+
+
+
+/*******************************************************************************
+ * 
+ * BANNER
+ *
+ *******************************************************************************/
+
+#banner {
+    font-weight: bold;
+    border-top: none !important;
+    position:relative;
+}
+
+@media (max-width: 1280px) {
+    #banner {
+        height: 28px !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    #banner {
+        height: 33px !important;
+    }
+}
+
+#bannerTitle {
+    font-weight: 600;
+    font-size: 140%;
+    display: inline-block; 
+    width: 100px;
+    background-color:transparent;
+    float:left;
+}
+
+#moduleMenu {
+    display: inline-block; 
+    border:none !important;
+    background-color:transparent !important;
+    margin-top: 5px !important;
+    margin-bottom: 1px !important;
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+}
+
+@media (max-width: 1280px) {
+    #moduleMenu {
+        width:500px !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    #moduleMenu {
+        width:800px !important;
+    }
+}
+
+#moduleMenu span.k-link {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+    #moduleMenu li.k-state-selected span.k-link:hover {
+        cursor: default !important;
+    }
+
+#bannerName {
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.ebs-banner-left-image {
+    background-image: url(Images/EBSLeftBannerImage.png);
+    display: inline-block;
+    float:left;
+    margin-right: 5px;
+}
+
+.ebs-banner-right-image {
+    background-image: url(Images/EBSRightBannerImage.png);
+    display: inline-block;
+}
+
+.ebs-banner-right-image a,
+.ebs-banner-right-image a:hover,
+.ebs-banner-right-image a:visited,
+.ebs-banner-right-image a:link,
+.ebs-banner-right-image a:active {
+    text-decoration: none;
+    color: white !important;
+}
+
+@media (max-width: 1280px) {
+    .ebs-banner-left-image, .ebs-banner-right-image {
+        height: 28px;
+        width: 42px;
+        background-size: 42px 28px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .ebs-banner-left-image, .ebs-banner-right-image {
+        height: 33px;
+        width: 49px;
+        background-size: 49px 33px;
+    }
+}
+
+.helpLink {
+    margin-top:10px;
+    font-size:85%;
+    font-weight:500;
+}
+
+
+/*******************************************************************************
+ * 
+ * PAGE NAVIGATION
+ *
+ *******************************************************************************/
+
+/* Page Navigation */
+#pageNavigation:not(.k-menu) {
+    display:none;
+}
+
+#pageNavigation.k-menu {
+    min-height: 1.5em;
+    border: none;
+    margin-bottom: .5em;
+}
+
+#pageNavigation .k-link {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 4px !important;
+}
+
+#pageNavigation .k-item {
+    border-right-width: 0px !important;
+}
+
+#pageNavigation .k-item .k-link {
+    font-size: 1em;
+    font-weight: 500;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 5px !important; 
+    padding-right: 5px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+#pageNavigation .k-item .k-link.k-state-selected {
+    color:#787878 !important;
+    background-color: white !important;
+}
+
+/* Page Menu */
+#pageMenu:not(.k-menu) {
+    display:none;
+}
+
+#pageMenu.k-menu {
+    margin-top: -5px;
+    border-top: none;
+}
+
+#pageMenu.k-menu .k-link {
+    padding-top: 4px !important;
+    padding-bottom: 3px !important;
+}
+
+
+
+/*******************************************************************************
+ * 
+ * WORKSPACE
+ *
+ *******************************************************************************/
+
+#page {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Displayed when a page is loading */
+#loading {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    background-color: lightgray;
+    -ms-filter: alpha(opacity=60); /* IE */
+    filter: alpha(opacity=60); /* IE */
+    -moz-opacity: 0.6; /* Mozilla */
+    opacity: 0.6; /* CSS3 */
+}
+
+    /* The image and text that is displayed when a page is loading */
+    #loading .app-loading-block {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translate(0px, -50%);
+        left: 50%;
+        margin-right: -50%;
+        height: 5em;
+    }
+
+        /* The "Loading" message displayed to the user */
+        #loading .app-loading-block .app-loading-message {
+            font-size: large;
+            font-weight: bold;
+            background-color: transparent !important;
+        }
+
+
+
+/*******************************************************************************
+ * 
+ * EBS-STYLES
+ *
+ *******************************************************************************/
+
+/* A widget that has an error */
+.ebs-error {
+    background-color: pink !important;
+}
+
+/* Link */
+.ebs-link-button, .ebs-breadcrumb-link, .ebs-detail-link-button {
+    text-decoration: underline;
+    color: blue;
+}
+
+    /* Link when the cursor is hovering over it */
+    .ebs-link-button:hover, .ebs-breadcrumb-link:hover, .ebs-detail-link-button:hover  {
+        cursor: pointer;
+    }
+
+/* Image Button */
+.ebs-image-button:hover {
+    cursor: pointer;
+}
+
+/* Breadcrumbs */
+.ebs-breadcrumbs {
+    margin-bottom: 5px;
+}
+
+    .ebs-breadcrumbs.k-block {
+        border-width: 0px;
+    }
+
+    .ebs-breadcrumbs div {
+        display: inline-block;
+    }
+
+.ebs-breadcrumb-current, .ebs-breadcrumb-separator, .ebs-breadcrumb-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.k-toolbar-excel {
+    float:right; 
+}
+
+a.k-button.k-button-icontext.k-grid-excel {
+    float: right;
+}
+
+/* Label for a field field */
+label.ebs-label {
+    position: relative;
+    margin-left: 10px;
+}
+
+/* Span within a label that indicates a required field */
+span.ebs-required-field {
+    position: absolute;
+    left: -10px;
+}
+
+/* Toolbar that appears over a grid */
+.app-grid-toolbar {
+    border-bottom: none !important;
+}
+
+/* Dialog Buttons Container */
+.k-window .ebs-dialog-buttons {
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+    width:100%;
+}
+
+/*******************************************************************************
+ * 
+ * NOTIFICATION-STYLES
+ *
+ *******************************************************************************/
+
+/* -- Notification Success -- */
+.k-notification-notificationSuccess.k-group {
+    background: rgba(0%, 60%, 0%, .7);
+    color: #fff;
+}
+
+.notificationSuccess {
+    width: 240px;
+    height: 100px;
+    padding: 0 30px;
+    line-height: 30px;
+}
+
+.notificationSuccess span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.notificationSuccess h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* -- Notification Error -- */
+.k-notification-notificationError.k-group {
+    background: rgba(100%, 0%, 0%, .7);
+    color: #ffffff;
+}
+
+.notificationError {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    line-height: 15px;
+}
+
+.notificationError span {
+    margin: 2px;
+}
+
+.notificationError .neFont {
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.importError {
+    color: red;
+}

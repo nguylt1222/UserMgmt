@@ -1,0 +1,44 @@
+﻿body {
+    font: 14px Helvetica, Arial, sans-serif;
+    color: #222222;
+    margin-top: 50px;
+}
+
+.scrollable-area{
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    /*border: 2px solid #ccc;*/
+    /*overflow-y: scroll;*/ /* <-- here is what is important*/
+}
+
+
+.entry-form{
+    margin: 4px 7px 2px 4px;
+    width: 80%;
+    height: 400px;
+    /*border: 2px solid #ccc;*/
+  
+}
+/* Span within a label that indicates a required field */
+span.required-field {
+    position: absolute;
+    left: -10px;
+}
+
+/* Span within a label that indicates a required field */
+span.ebs-required-field {
+    position: absolute;
+    left: -10px;
+    color:red;
+}
+
+/* Label for a field field */
+label.ebs-label {
+    position: relative;
+    margin-left: 10px;
+}
+
+.k-textbox {
+    width: 300px;
+}
