@@ -48,7 +48,7 @@
                     state: "VA",
                     zip: "20176",
                 },
-                email: "Linda_Nguyen@verizon.net",
+                email: "LNgu@gmail.com",
                 phone: "7037777777",
                 dateHired: "2010-01-01",
                 position: "Direct",
